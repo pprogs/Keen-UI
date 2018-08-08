@@ -14,7 +14,7 @@
                 <slot name="icon"></slot>
             </div>
 
-            <div class="ui-tab-header-item__text" v-if="hasText">{{ title }}</div>
+            <div style="display:inline" class="ui-tab-header-item__text" v-if="hasText">{{ title }}</div>
         </slot>
 
         <ui-ripple-ink v-if="!disableRipple && !disabled"></ui-ripple-ink>
