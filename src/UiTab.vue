@@ -32,6 +32,7 @@ export default {
             }
         },
         title: String,
+        alertIcon: String,
         icon: String,
         iconProps: {
             type: Object,

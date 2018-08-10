@@ -20,14 +20,14 @@
                     :icon="icon"
                     :remove-text="iconProps.removeText"
                     :use-svg="iconProps.useSvg"
-                ></ui-icon>
+                ></ui-icon> 
             </slot>
         </div>
 
         <div
             class="ui-tab-header-item__text"
             v-if="type === 'text' || type === 'icon-and-text'"
-        >{{ title }}</div>
+        ><ui-icon v-if="alertIcon" icon="notification_important"></ui-icon>{{ title }}</div>
 
         <ui-ripple-ink trigger="headerItem" v-if="!disableRipple && !disabled"></ui-ripple-ink>
     </li>
@@ -49,6 +49,7 @@ export default {
             default: 'text' // 'text', 'icon', or 'icon-and-text'
         },
         title: String,
+        alertIcon: Boolean,
         icon: String,
         iconProps: {
             type: Object,
@@ -132,6 +133,13 @@ export default {
     @include text-truncation;
     font-size: rem-calc(15px);
     font-weight: 500;
+
+    .ui-icon {
+        cursor: inherit;
+        font-size: rem-calc(15px);
+        font-weight: 500;
+        color: red;
+    }
 }
 
 .ui-tab-header-item__icon {

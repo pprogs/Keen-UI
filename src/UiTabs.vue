@@ -10,6 +10,7 @@
                     :disabled="tab.disabled"
                     :icon-props="tab.iconProps"
                     :icon="tab.icon"
+                    :alert-icon="tab.alertIcon"
                     :id="tab.id"
                     :key="tab.id"
                     :show="tab.show"

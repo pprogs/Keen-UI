@@ -1,6 +1,6 @@
 /*!
  * Keen UI v1.0.1 (https://github.com/JosephusPaye/keen-ui)
- * (c) 2017 Josephus Paye II
+ * (c) 2018 Josephus Paye II
  * Released under the MIT License.
  */
 
@@ -3734,6 +3734,12 @@ body[modality="keyboard"] .ui-tabs--background-color-primary .ui-tab-header-item
   text-overflow: ellipsis;
   font-size: 0.9375rem;
   font-weight: 500;
+}
+.ui-tab-header-item__text .ui-icon {
+    cursor: inherit;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: red;
 }
 .ui-tab-header-item__icon {
   height: 1.5rem;
