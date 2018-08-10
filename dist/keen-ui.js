@@ -6211,7 +6211,10 @@ exports.default = {
             }
         },
         title: String,
-        alertIcon: String,
+        alertIcon: {
+            type: Boolean,
+            default: false
+        },
         icon: String,
         iconProps: {
             type: Object,
@@ -6300,7 +6303,10 @@ exports.default = {
             type: String,
             default: 'text' },
         title: String,
-        alertIcon: Boolean,
+        alertIcon: {
+            type: Boolean,
+            default: false
+        },
         icon: String,
         iconProps: {
             type: Object,

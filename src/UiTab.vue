@@ -32,7 +32,10 @@ export default {
             }
         },
         title: String,
-        alertIcon: String,
+        alertIcon: {
+            type: Boolean,
+            default: false
+        },
         icon: String,
         iconProps: {
             type: Object,

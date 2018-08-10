@@ -49,7 +49,10 @@ export default {
             default: 'text' // 'text', 'icon', or 'icon-and-text'
         },
         title: String,
-        alertIcon: Boolean,
+        alertIcon: {
+            type :Boolean,
+            default: false
+        },
         icon: String,
         iconProps: {
             type: Object,
