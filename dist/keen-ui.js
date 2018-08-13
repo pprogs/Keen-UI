@@ -6249,6 +6249,14 @@ exports.default = {
         },
         disabled: function disabled() {
             this.$parent.handleTabDisableChange(this);
+        },
+        alertIcon: function alertIcon() {
+            var _this = this;
+
+            this.$nextTick(function () {
+                _this.$parent.tabContainerWidth = _this.$parent.$refs.tabsContainer.offsetWidth;
+                _this.$parent.refreshIndicator();
+            });
         }
     },
 

@@ -70,6 +70,13 @@ export default {
 
         disabled() {
             this.$parent.handleTabDisableChange(this);
+        },
+
+        alertIcon() {            
+            this.$nextTick(() => {
+                this.$parent.tabContainerWidth = this.$parent.$refs.tabsContainer.offsetWidth;
+                this.$parent.refreshIndicator();
+            });
         }
     },
 
