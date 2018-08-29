@@ -310,7 +310,7 @@ export default {
         refreshIndicator() {
             this.activeTabPosition = {
                 left: this.activeTabElement ? this.activeTabElement.offsetLeft : 0,
-                width: this.activeTabElement ? this.activeTabElement.offsetWidth : 0
+                width: this.activeTabElement ? this.activeTabElement.offsetWidth - 2 : 0
             };
         }
     },
